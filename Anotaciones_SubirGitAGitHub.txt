@@ -27,3 +27,10 @@ Para bajarse los cambios, porque es necesario:
 git pull
 
 y solo luego se puede subir con git push cambios q se hayan hecho en local
+
+**En caso salir algun error o advertencia, se debe configurar el tipo de proceso para el git pull con:
+
+git config pull.rebase false
+git pull origin main (por ser primera vez)
+
+Con eso ya utilizar git push para poder subir, recordar antes hacer los git add y commit necesarios
