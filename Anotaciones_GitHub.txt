@@ -1,7 +1,9 @@
 Configuracion SSH
 Comunicacion entre Git Local y GitHub Servidor
 
-ES MÁS SENCILLO realizar la comunicacion HTTPS, aunque se esta abandonando y yendo a SSH, intentar primero con HTTPS
+NOTAS:
+- ES MÁS SENCILLO realizar la comunicacion HTTPS, aunque se esta abandonando y yendo a SSH, intentar primero con HTTPS
+- Me funciono con SSH solo en la carpeta donde cree la clave ni siquiera dentro de otra carpeta dentro de esta carpeta así que con cuidado, se debe saber donde se realizan las claves SSH para q funcione para todas las carpetas
 
 Primero se crea la clave SSH en una carpeta
 De preferencia llamarla .ssh

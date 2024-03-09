@@ -1,6 +1,8 @@
 En PRIMER LUGAR, se recomienda crear totalmente vacío el repositorio en GitHub sin README ni nada, solo con su nombre para evitar posibles fallos...
 
-NOTA: como se observa, estan los comandos con https:// ya que al final se observó que funcionaba correctamente con https y fallaba con ssh si no se sabe ubicar o crear correctamente la clave ssh para q funcione para cualquier carpeta
+NOTAS:
+- Como se observa, estan los comandos con https:// ya que al final se observó que funcionaba correctamente con https y fallaba con ssh si no se sabe ubicar o crear correctamente la clave ssh para q funcione para cualquier carpeta
+- Me funciono con SSH solo en la carpeta donde cree la clave ni siquiera dentro de otra carpeta dentro de esta carpeta así que con cuidado, se debe saber donde se realizan las claves SSH para q funcione para todas las carpetas
 
 git remote add origin https://github.com/Usuario/pruebas.git
 git branch -M main
