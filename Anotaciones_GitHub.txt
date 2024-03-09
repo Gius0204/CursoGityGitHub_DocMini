@@ -1,0 +1,23 @@
+Configuracion SSH
+Comunicacion entre Git Local y GitHub Servidor
+
+Primero se crea la clave SSH en una carpeta
+De preferencia llamarla .ssh
+$ ssh-keygen -t ed25519 -C "correo"
+Ejecutar ese comando y pedira contraseña y nombre de la clave
+por lo general se usa id_rsa para el nombre
+
+$ eval "$(ssh-agent -s)"
+Para verificar si hay un ident en funcionamiento
+
+$ ssh-add "ubicacion_local".ssh/id_rsa
+Para agregarlo al programa de controlador de versiones
+
+Añadir esta clave en github en la parte de
+SSH and GPG keys en Settings y copiar el texto de clave publica del ip_rsa.pub
+
+Se prueba la conexion con el comando:
+$ ssh -T git@github.com
+
+Pedira poner Yes y te saludara diciendo q te has autenticado correctamente, pero no tiene acceso Shell
+Eso es correcto
