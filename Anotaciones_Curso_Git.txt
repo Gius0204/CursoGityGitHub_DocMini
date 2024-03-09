@@ -1,0 +1,71 @@
+cntrl q: Para salir de un fichero en git
+git reset --hard: Podemos ir hasta el fichero hacia adelante y o atras con HEAD->main
+git checkout: Vamos hacia ese lado solo con HEAD
+cada uno de los anteriores + hash
+git reflog: Para ver todo a pesar de haber eliminado con reset --hard
+git checkout main: Para ir a donde esta la rama
+
+cd y cd .. para moverse entre carpetas
+mkdir para crear carpeta
+touch para crear archivo
+nano -/.bash_profile para ir al path e integrarlo dentro
+nano -/.bashrc
+$ export PATH="/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code:$PATH"
+
+code .
+
+$ git config --global user.name "Gius0204"
+$ git config --global user.email "giusseppepimin@gmail.com"
+
+git init para determinar la raiz del repositorio
+git branch -m main para renombrar una rama, o especialmente la master llamarla main
+
+git status para ver el proceso de archivos si hubo nuevo archivo o modificacion
+
+git add + "archivo" o + . para añadir y crear una especie de preparacion para la captura
+git commit -m "Mensaje" se crea la captura con un comentario para saber de q se trata
+git log para ver todos los commit completos
+
+git checkout + "archivo" para ir a una version anterior del archivo o algo asi, pero mucho cuidado ya q este realmente no solo te mueve de ubicacion sino hace mas cosas
+git reset, para una version anterior creo
+
+$ git log --graph --pretty=oneline
+$ git log --graph --decorate --all --one
+otras formas de ver el log mas entendible
+
+$ git config --global alias.tree "log --graph --decorate --all --oneline"
+crear un alias para q se convierta en un comando personalizado
+git tree ejecutar el comando personalizado con ese nombre "tree"
+
+touch .gitignore crear archivo especial para excluir q archivos no deben subirse al repositorio como archivos temporales y dentro de este se pone la ubicacion o los nombres de esos archivos
+y luego se añade con git add este archivo y git commit
+
+git diff Sirve para comparar diferencias entre archivos o incluso ramas
+
+git checkout + hash Para moverse ahi, pero cuidado
++ HEAD para ir a donde esta apuntando y situarlo
++ main o nombre de la rama para ir a donde esta el ultimo cambio guardado de la rama donde apunta
+
+git reset --hard +hash Un borrado fuerte hasta el punto especificado del hash, los commits despues se borran (cuidado)
+git reflog para ver todos los logs a pesar de haber usado reset --hard
+
+git tag clase_1 o "Nombre" Para crear un tag q es un distintivo especial para un punto de guardado donde por ejemplo se puede haber culminado todo un dia de trabajo o toda una primera version, distintivos especiales
+
+git checkout tags/clase_1 Para ir a ese punto especifico por tag y ya no por hash, igual cuidado con el checkout
+
+git branch login Para crear una nueva rama con el nombre login
+
+git switch login Para cambiar de rama donde se esta a otra rama q se llama login
+
+git merge main Si estamos en una rama por ejemplo "login", trae todos los cambios de la rama main a esta rama login, ojo cuando hay conflictos debe escogerse quien tiene razon o con que codigo de q rama quedarse
+y volver a agregar ese cambio con git add y commit para q qde solucionado el conflicto
+
+git stash Sirve especialmente para guardar algunos cambios q no queremos q ensucien lo que esta bien hecho y quede solo para nosotros, mientras que para el equipo de trabajo quede el ultimo commit
+Es como un commit especial q solo es visible para nosotros de forma local si lo llamamos
+
+git stash list Para ver cuales hay
+git stash pop Para traer los cambios de vuelta del stash y poder usarlos
+git stash drop Para eliminar esos cambios locales que creemos q realmente no nos van a servir
+
+git branch -d login Para eliminar una rama o branch, realmente se elimina la rama pero extraoficialmente se siguen guardando los commit mas no la rama
+
