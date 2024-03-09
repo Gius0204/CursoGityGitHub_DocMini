@@ -1,0 +1,16 @@
+git remote add origin https://github.com/Gius0204/pruebas.git
+git branch -M main
+git push -u origin main
+
+estas instrucciones son propias del nuevo proyecto:
+
+git remote add origin https://github.com/Gius0204/MiniDoc_CursoGityGitHub.git
+
+Con este codigo se ha configurado el repositorio local con el repositorio de github
+
+Para subir el codigo, se utiliza:
+
+
+
+Este repositorio es una practica de lo visto en el curso de Git y GitHub de MoureDev, agradecido con el por toda la información, donde también he subido algunas anotaciones .txt de todo y configuracion con windows
+
