@@ -1,16 +1,29 @@
-git remote add origin https://github.com/Gius0204/pruebas.git
+En PRIMER LUGAR, se recomienda crear totalmente vacío el repositorio en GitHub sin README ni nada, solo con su nombre para evitar posibles fallos...
+
+git remote add origin https://github.com/Usuario/pruebas.git
 git branch -M main
 git push -u origin main
 
 estas instrucciones son propias del nuevo proyecto:
 
-git remote add origin https://github.com/Gius0204/MiniDoc_CursoGityGitHub.git
+git remote add origin https://github.com/Usuario/pruebas.git
 
 Con este codigo se ha configurado el repositorio local con el repositorio de github
 
+Si se equivoca al colocar el link, reemplazar add por set-url
+
 Para subir el codigo, se utiliza:
+git push -u origin main
 
+Si en este tramo se agrega un README para poner más bonito el repositorio, tener en cuenta:
 
+Para ver que cambios ha habido en el GitHub (remoto):
+git fetch
+Solo se ven los cambios, no se bajan los cambios
 
-Este repositorio es una practica de lo visto en el curso de Git y GitHub de MoureDev, agradecido con el por toda la información, donde también he subido algunas anotaciones .txt de todo y configuracion con windows
+Si se intena git push no se va a poder ejecutar y saldra error...
 
+Para bajarse los cambios, porque es necesario:
+git pull
+
+y solo luego se puede subir con git push cambios q se hayan hecho en local
